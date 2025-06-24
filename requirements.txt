@@ -1,8 +1,8 @@
 paddlepaddle==3.0.0
 paddleocr==3.0.1
+pandas==1.5.3
 fastapi==0.115.12
 uvicorn==0.34.2
 python-multipart==0.0.20
 python-dotenv==1.1.0
-pandas>=2.0.0
 tokenizers>=0.14.0
