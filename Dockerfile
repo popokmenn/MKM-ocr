@@ -32,9 +32,9 @@ RUN pip install --upgrade pip setuptools wheel && \
 
 # Download OCR model
 RUN mkdir -p /app/models/det_model /app/models/rec_model && \
-    wget -qO - https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_rec_infer.tar \
-    | tar -xC /app/models/det_model --strip-components=1 && \
     wget -qO - https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_det_infer.tar \
+    | tar -xC /app/models/det_model --strip-components=1 && \
+    wget -qO - https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-OCRv5_server_rec_infer.tar \
     | tar -xC /app/models/rec_model --strip-components=1
 
 # Optional: hapus wget (tapi perintahmu typo)
